@@ -1,0 +1,4 @@
+com\mycompany\sistema_cadastros_marcos_braga\Sistema_Cadastros_Marcos_Braga.class
+util\HibernateUtil.class
+entity\CadastroEntity.class
+dao\CadastroDAO.class
