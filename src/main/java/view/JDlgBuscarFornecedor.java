@@ -8,12 +8,12 @@ package view;
  *
  * @author u11249767105
  */
-public class JDlgBuscarUsuario extends javax.swing.JDialog {
+public class JDlgBuscarFornecedor extends javax.swing.JDialog {
 
     /**
      * Creates new form JDlgBuscar
      */
-    public JDlgBuscarUsuario(java.awt.Frame parent, boolean modal) {
+    public JDlgBuscarFornecedor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -28,7 +28,7 @@ public class JDlgBuscarUsuario extends javax.swing.JDialog {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTblUsuario = new javax.swing.JTable();
+        jTblFornecedor = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jBtnIncluir = new javax.swing.JButton();
@@ -38,7 +38,7 @@ public class JDlgBuscarUsuario extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jTblUsuario.setModel(new javax.swing.table.DefaultTableModel(
+        jTblFornecedor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -49,7 +49,7 @@ public class JDlgBuscarUsuario extends javax.swing.JDialog {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTblUsuario);
+        jScrollPane1.setViewportView(jTblFornecedor);
 
         jLabel1.setText("Código");
 
@@ -129,21 +129,23 @@ public class JDlgBuscarUsuario extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgBuscarUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgBuscarFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgBuscarUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgBuscarFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgBuscarUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgBuscarFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgBuscarUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgBuscarFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDlgBuscarUsuario dialog = new JDlgBuscarUsuario(new javax.swing.JFrame(), true);
+                JDlgBuscarFornecedor dialog = new JDlgBuscarFornecedor(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -162,7 +164,7 @@ public class JDlgBuscarUsuario extends javax.swing.JDialog {
     private javax.swing.JButton jBtnPesquisar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTblUsuario;
+    private javax.swing.JTable jTblFornecedor;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
