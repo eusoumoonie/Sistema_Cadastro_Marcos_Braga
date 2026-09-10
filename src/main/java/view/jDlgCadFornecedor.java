@@ -160,9 +160,12 @@ public class jDlgCadFornecedor extends javax.swing.JDialog {
                         .addComponent(jLabel6)
                         .addGap(28, 28, 28))
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
+        jBtnSalvar.setBackground(new java.awt.Color(253, 231, 231));
+        jBtnSalvar.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jBtnSalvar.setForeground(new java.awt.Color(255, 51, 51));
         jBtnSalvar.setText("Cancelar");
         jBtnSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,6 +173,9 @@ public class jDlgCadFornecedor extends javax.swing.JDialog {
             }
         });
 
+        jBtnCancelar.setBackground(new java.awt.Color(231, 255, 231));
+        jBtnCancelar.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jBtnCancelar.setForeground(new java.awt.Color(0, 153, 51));
         jBtnCancelar.setText("Salvar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -182,7 +188,7 @@ public class jDlgCadFornecedor extends javax.swing.JDialog {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jBtnSalvar)
-                        .addGap(18, 18, 18)
+                        .addGap(9, 9, 9)
                         .addComponent(jBtnCancelar)
                         .addGap(8, 8, 8))
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -192,11 +198,11 @@ public class jDlgCadFornecedor extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnSalvar)
-                    .addComponent(jBtnCancelar))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jBtnSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                    .addComponent(jBtnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 

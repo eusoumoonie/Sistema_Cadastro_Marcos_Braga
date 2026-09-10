@@ -28,6 +28,8 @@ public class jDlgCadUsuario extends javax.swing.JDialog {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jBtnSalvar1 = new javax.swing.JButton();
+        jBtnCancelar1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jTxtSenha = new javax.swing.JTextField();
         jTxtNome = new javax.swing.JTextField();
@@ -37,8 +39,8 @@ public class jDlgCadUsuario extends javax.swing.JDialog {
         JChbAtivo = new javax.swing.JCheckBox();
         jLabel3 = new javax.swing.JLabel();
         jTxtEmail = new javax.swing.JTextField();
-        jBtnSalvar = new javax.swing.JButton();
-        jBtnCancelar = new javax.swing.JButton();
+        jBtnSalvar2 = new javax.swing.JButton();
+        jBtnCancelar2 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -50,6 +52,21 @@ public class jDlgCadUsuario extends javax.swing.JDialog {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 100, Short.MAX_VALUE)
         );
+
+        jBtnSalvar1.setBackground(new java.awt.Color(253, 231, 231));
+        jBtnSalvar1.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jBtnSalvar1.setForeground(new java.awt.Color(255, 51, 51));
+        jBtnSalvar1.setText("Cancelar");
+        jBtnSalvar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnSalvar1ActionPerformed(evt);
+            }
+        });
+
+        jBtnCancelar1.setBackground(new java.awt.Color(231, 255, 231));
+        jBtnCancelar1.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jBtnCancelar1.setForeground(new java.awt.Color(0, 153, 51));
+        jBtnCancelar1.setText("Salvar");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -129,14 +146,20 @@ public class jDlgCadUsuario extends javax.swing.JDialog {
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        jBtnSalvar.setText("Cancelar");
-        jBtnSalvar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnSalvar2.setBackground(new java.awt.Color(253, 231, 231));
+        jBtnSalvar2.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jBtnSalvar2.setForeground(new java.awt.Color(255, 51, 51));
+        jBtnSalvar2.setText("Cancelar");
+        jBtnSalvar2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnSalvarActionPerformed(evt);
+                jBtnSalvar2ActionPerformed(evt);
             }
         });
 
-        jBtnCancelar.setText("Salvar");
+        jBtnCancelar2.setBackground(new java.awt.Color(231, 255, 231));
+        jBtnCancelar2.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        jBtnCancelar2.setForeground(new java.awt.Color(0, 153, 51));
+        jBtnCancelar2.setText("Salvar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -146,11 +169,11 @@ public class jDlgCadUsuario extends javax.swing.JDialog {
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(7, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jBtnSalvar)
-                .addGap(18, 18, 18)
-                .addComponent(jBtnCancelar)
+                .addComponent(jBtnSalvar2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jBtnCancelar2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -158,11 +181,11 @@ public class jDlgCadUsuario extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnSalvar)
-                    .addComponent(jBtnCancelar))
-                .addContainerGap())
+                    .addComponent(jBtnCancelar2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBtnSalvar2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -180,9 +203,13 @@ public class jDlgCadUsuario extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtEmailActionPerformed
 
-    private void jBtnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSalvarActionPerformed
+    private void jBtnSalvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSalvar1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnSalvarActionPerformed
+    }//GEN-LAST:event_jBtnSalvar1ActionPerformed
+
+    private void jBtnSalvar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSalvar2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnSalvar2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -228,8 +255,10 @@ public class jDlgCadUsuario extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox JChbAtivo;
-    private javax.swing.JButton jBtnCancelar;
-    private javax.swing.JButton jBtnSalvar;
+    private javax.swing.JButton jBtnCancelar1;
+    private javax.swing.JButton jBtnCancelar2;
+    private javax.swing.JButton jBtnSalvar1;
+    private javax.swing.JButton jBtnSalvar2;
     private javax.swing.JComboBox<String> jCbbFuncao;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
