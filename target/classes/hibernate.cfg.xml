@@ -25,6 +25,7 @@
 
         <!-- Mapeamento das entidades (tabelas)-->
         <mapping class="entity.CadastroEntity"/>
+        <mapping class="entity.FornecedorEntity"/>
 
     </session-factory>
 </hibernate-configuration>
